@@ -24,10 +24,7 @@ gcloud run deploy valero-new --image gcr.io/upbeat-button-265722/valero-new --pl
 Live Site: 
 https://valero-new-fvmy7faymq-uc.a.run.app/
 
-LEFTOVERS:
-docker build -t valero-new .
-gcloud auth configure-docker
-
-
-
-docker build -t gcr.io/upbeat-button-265722/valero-new .; docker push gcr.io/upbeat-button-265722/valero-new; gcloud run deploy valero-new --image gcr.io/upbeat-button-265722/valero-new --platform managed --region us-central1 --allow-unauthenticated
+docker build -t gcr.io/upbeat-button-265722/valero-new .
+docker run -p 8080:8080 -e PORT=8080 gcr.io/upbeat-button-265722/valero-new:latest
+docker push gcr.io/upbeat-button-265722/valero-new
+gcloud run deploy valero-new --image gcr.io/upbeat-button-265722/valero-new --platform managed --region us-central1 --allow-unauthenticated
