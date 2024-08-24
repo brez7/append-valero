@@ -2,6 +2,9 @@
 description %}Experience the best hand car wash and auto detailing services in Encinitas at Cardiff Valero. Our professional team provides exceptional care for your vehicle{% endblock %} {% block content %}
 
 <main class="main">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css', v=time.time()) }}">
+
   <!-- Hero Section -->
   <section id="hero" class="hero section dark-background">
     <img src="static/img/hero.webp" alt="" data-aos="fade-in" />
@@ -183,96 +186,90 @@ description %}Experience the best hand car wash and auto detailing services in E
       </div>
     </div>
   </section>
-
 <section id="faq" class="faq section">
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="content px-xl-5">
-            <h3><span style="color:#0170ac">Cardiff Valero </span><br><strong><span style="color:#fdce02; text-shadow: -1px -1px 0 #0170ac, 1px -1px 0 #0170ac,     -1px  1px 0 #0170ac,1px  1px 0 #0170ac;">Hand Car Wash</span></strong></h3>
-            <p>
-              Discover the ultimate car care experience at Cardiff Valero Hand Car Wash in Encinitas. </p><p>Our team of dedicated professionals provides a meticulous hand wash service that ensures your vehicle looks its best. </p><p>Whether you're look for a car wash near you or auto deatailing services, we offer unparalleled service and convenience.
-            </p>
-          </div>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="content px-xl-5">
+          <h3><span style="color:#0170ac">Cardiff Valero </span><br><strong><span style="color:#fdce02; text-shadow: -1px -1px 0 #0170ac, 1px -1px 0 #0170ac, -1px 1px 0 #0170ac,1px 1px 0 #0170ac;">Hand Car Wash</span></strong></h3>
+          <p>Discover the ultimate car care experience at Cardiff Valero Hand Car Wash in Encinitas.</p>
+          <p>Our team of dedicated professionals provides a meticulous hand wash service that ensures your vehicle looks its best.</p>
+          <p>Whether you're look for a car wash near you or auto detailing services, we offer unparalleled service and convenience.</p>
         </div>
+      </div>
 
-        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-          <div class="faq-container">
-            <div class="faq-item faq-active">
-              <h3>
-                <span class="num">1.</span>
-                <span>What services are included in a hand car wash and detailing package?</span>
-              </h3>
-              <div class="faq-content">
-                <p>
-                  Our comprehensive package includes exterior hand washing, waxing, tire dressing, interior vacuuming, window cleaning, and detailed care for the dashboard, console, and seats. When you are looking for a car wash in Encinitas, choose Cardiff Valero for exceptional results.
-                </p>
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span class="num">1.</span> What services are included in a hand car wash and detailing package?
+              </button>
+            </h3>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Our comprehensive package includes exterior hand washing, waxing, tire dressing, interior vacuuming, window cleaning, and detailed care for the dashboard, console, and seats. When you are looking for a car wash in Encinitas, choose Cardiff Valero for exceptional results.
               </div>
-              <i class="faq-toggle bi bi-chevron-right"></i>
             </div>
-            <!-- End Faq item-->
+          </div>
 
-            <div class="faq-item">
-              <h3>
-                <span class="num">2.</span>
-                <span>How long does a hand car wash and detailing take?</span>
-              </h3>
-              <div class="faq-content">
-                <p>
-                  Typically, our services take between 1 to 3 hours for detailing, and less than 15 minutes for a car wash. For reliable auto washing services  in Encinitas, Cardiff Valero is your trusted choice.
-                </p>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <span class="num">2.</span> How long does a hand car wash and detailing take?
+              </button>
+            </h3>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Typically, our services take between 1 to 3 hours for detailing, and less than 15 minutes for a car wash. For reliable auto washing services in Encinitas, Cardiff Valero is your trusted choice.
               </div>
-              <i class="faq-toggle bi bi-chevron-right"></i>
             </div>
-            <!-- End Faq item-->
+          </div>
 
-            <div class="faq-item">
-              <h3>
-                <span class="num">3.</span>
-                <span>What are the benefits of a hand car wash compared to an automatic car wash?</span>
-              </h3>
-              <div class="faq-content">
-                <p>
-                  Hand car washes provide a more thorough and gentle cleaning, reducing the risk of scratches and damage. For personalized care and exceptional detail, choose Cardiff Valero in Encinitas.
-                </p>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <span class="num">3.</span> What are the benefits of a hand car wash compared to an automatic car wash?
+              </button>
+            </h3>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Hand car washes provide a more thorough and gentle cleaning, reducing the risk of scratches and damage. For personalized care and exceptional detail, choose Cardiff Valero in Encinitas.
               </div>
-              <i class="faq-toggle bi bi-chevron-right"></i>
             </div>
-            <!-- End Faq item-->
+          </div>
 
-            <div class="faq-item">
-              <h3>
-                <span class="num">4.</span>
-                <span>How often should I get my car detailed?</span>
-              </h3>
-              <div class="faq-content">
-                <p>
-                  We recommend detailing your car every 4-6 months to maintain its appearance and protect the paint and interior surfaces.  
-                </p>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <span class="num">4.</span> How often should I get my car detailed?
+              </button>
+            </h3>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We recommend detailing your car every 4-6 months to maintain its appearance and protect the paint and interior surfaces.
               </div>
-              <i class="faq-toggle bi bi-chevron-right"></i>
             </div>
-            <!-- End Faq item-->
+          </div>
 
-            <div class="faq-item">
-              <h3>
-                <span class="num">5.</span>
-                <span>Are the products used in the detailing process safe for my car's paint and interior?</span>
-              </h3>
-              <div class="faq-content">
-                <p>
-                  Yes, we use high-quality, non-abrasive products that are safe for your car's paint, upholstery, and other surfaces. Trust Cardiff Valero Hand Car Wash in Encinitas to ensure your vehicle gets the best care.
-                </p>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <span class="num">5.</span> Are the products used in the detailing process safe for my car's paint and interior?
+              </button>
+            </h3>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes, we use high-quality, non-abrasive products that are safe for your car's paint, upholstery, and other surfaces. Trust Cardiff Valero Hand Car Wash in Encinitas to ensure your vehicle gets the best care.
               </div>
-              <i class="faq-toggle bi bi-chevron-right"></i>
             </div>
-
           </div>
         </div>
       </div>
     </div>
-  </section>
-            <!-- End Faq item-->
+  </div>
+</section>
+
  
  
 

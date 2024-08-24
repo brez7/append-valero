@@ -1,4 +1,5 @@
-browser-sync start --config bs-config.js
+browser-sync start --proxy "localhost:5000" --files "static/**/*, templates/**/*"
+
 
 
 Build Docker Image and Deploy to Cloud Run:

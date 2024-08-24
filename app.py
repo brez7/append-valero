@@ -14,6 +14,11 @@ def aboutus():
     return render_template("aboutus.html", is_index=False)
 
 
+@app.route("/blog")
+def blog():
+    return render_template("blog.html", is_index=False)
+
+ 
 @app.route("/coupons")
 def coupons():
     return render_template("coupons.html", is_index=False)
